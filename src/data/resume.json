@@ -1,0 +1,256 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "basics": {
+      "name": "Raghav Kanwal",
+      "label": "Lead UI Engineer at Unicommerce",
+      "image": "",
+      "email": "raghav.kanwal@gmail.com",
+      "phone": "+91 9654723413",
+      "url": "",
+      "summary": "Experienced Frontend Engineer with 7 years of working in the internet industry. Skilled in HTML, CSS, Angular,JavaScript and jQuery. Strong engineering professional with a Bachelor of Computer Applications focused in Computer Science from Vivekananda Institute of Professional Studies.",
+      "location": {
+        "countryCode": "US",
+        "address": "India"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "raghavkanwal",
+          "url": "https://www.linkedin.com/in/raghavkanwal/"
+        }
+      ]
+    },
+    "work": [
+      {
+        "name": "Unicommerce",
+        "position": "Lead UI Engineer",
+        "startDate": "2021-04-30",
+        "highlights": [],
+        "summary": "",
+        "url": "https://www.linkedin.com/company/2448230",
+        "location": "Gurugram, Haryana, India"
+      },
+      {
+        "name": "Unicommerce",
+        "position": "Senior Frontend Engineer",
+        "startDate": "2018-06-30",
+        "endDate": "2021-04-30",
+        "highlights": [],
+        "summary": "",
+        "url": "https://www.linkedin.com/company/2448230",
+        "location": ""
+      },
+      {
+        "name": "iimjobs.com",
+        "position": "Frontend Engineer",
+        "startDate": "2016-08-31",
+        "endDate": "2018-05-31",
+        "highlights": [],
+        "summary": "",
+        "url": "https://www.linkedin.com/company/338913",
+        "location": "New Delhi Area, India"
+      },
+      {
+        "name": "Mobikasa",
+        "position": "UI/UX Developer",
+        "startDate": "2014-09-30",
+        "endDate": "2016-08-31",
+        "highlights": [],
+        "summary": "",
+        "url": "https://www.linkedin.com/company/2322628",
+        "location": "Chhatarpur Area, India"
+      }
+    ],
+    "volunteer": [],
+    "education": [
+      {
+        "institution": "Birla Institute of Technology and Science, Pilani",
+        "area": "Software Systems",
+        "studyType": "Master of Technology - MTech",
+        "startDate": "2018-12-31",
+        "endDate": "2022-12-31",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "Vivekananda institute of Professional studies",
+        "area": "Computer Science",
+        "studyType": "Bachelor of Computer Applications",
+        "startDate": "2011-12-31",
+        "endDate": "2014-12-31",
+        "score": "",
+        "courses": []
+      }
+    ],
+    "awards": [],
+    "certificates": [
+      {
+        "name": "Git Real",
+        "issuer": "Code School",
+        "url": "https://www.codeschool.com/courses/git-real"
+      },
+      {
+        "name": "Shaping up with AngularJS",
+        "issuer": "Code School",
+        "url": "https://www.codeschool.com/courses/shaping-up-with-angular-js"
+      },
+      {
+        "name": "Adventures in Web Animations",
+        "issuer": "Code School",
+        "url": "https://www.codeschool.com/courses/adventures-in-web-animations"
+      },
+      {
+        "name": "JavaScript Road Trip Part 3",
+        "issuer": "Code School",
+        "url": "https://www.codeschool.com/courses/javascript-road-trip-part-3"
+      },
+      {
+        "name": "Fundamentals of Design",
+        "issuer": "Code School",
+        "url": "https://www.codeschool.com/courses/fundamentals-of-design"
+      },
+      {
+        "name": "jQuery: The Return Flight",
+        "issuer": "Code School",
+        "url": "https://www.codeschool.com/courses/jquery-the-return-flight"
+      },
+      {
+        "name": "Google Mobile Sites",
+        "issuer": "Google",
+        "endDate": "2018-06-30",
+        "startDate": "2017-06-30",
+        "url": "https://www.google.com/partners/#i_profile;idtf=115347790465556660750;"
+      },
+      {
+        "name": "Front-end development (400 Hour Program)",
+        "issuer": "freeCodeCamp",
+        "startDate": "2017-07-31",
+        "url": "http://freecodecamp.com/raghavkanwal/front-end-certification"
+      }
+    ],
+    "publications": [],
+    "skills": [
+      {
+        "name": "HTML",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "CSS",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "JavaScript",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "jQuery",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Mobikasa",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "iimjobs.com",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "HTML5",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Social Media",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "PHP",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "WordPress",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "C",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Dreamweaver",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Java",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "User Interface Design",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "SQL",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "MySQL",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Web Design",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Microsoft Office",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Cascading Style Sheets (CSS)",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Web Development",
+        "level": "",
+        "keywords": []
+      }
+    ],
+    "languages": [
+      {
+        "fluency": "Full Professional",
+        "language": "English"
+      },
+      {
+        "fluency": "Native Speaker",
+        "language": "Hindi"
+      }
+    ],
+    "interests": [],
+    "references": [
+      {
+        "name": "Rajesh Kumar Rathor",
+        "reference": "Raghav is a very talented person in his fields of working, he works dedicatedly to his assigned project and complete in less time, you can't judge him by his physical experience, he is way more talented. "
+      }
+    ],
+    "projects": [],
+    "meta": {
+      "version": "v1.0.0",
+      "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+    }
+  }
