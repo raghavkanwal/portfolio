@@ -95,7 +95,7 @@ module.exports = {
           /* Exact name of the font as defied in @font-face CSS rule */
           name: "Roboto",
           /* URL to the font CSS file with @font-face definition */
-          file: "https://fonts.googleapis.com/css2?family=Roboto:300,400,700&display=swap",
+          file: "https://fonts.googleapis.com/css2?family=Roboto&display=swap",
           },
           {
             /* Exact name of the font as defied in @font-face CSS rule */

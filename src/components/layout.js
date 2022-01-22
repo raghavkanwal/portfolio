@@ -45,7 +45,6 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0.5rem 1rem`,
-          marginTop: `2.5rem`,
           borderRadius: `0.5rem`,
         }}
       >

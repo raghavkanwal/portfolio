@@ -21,7 +21,8 @@ const IndexPage = () => (
       maxWidth: `60ch`,
       margin: `0 auto`
     }}>
-
+      <br/>
+      <br/>
       <div className="businessCard" style={{
         marginTop: `2rem`,
         backgroundColor: `rgba(255, 255, 255, 0.08)`,
@@ -44,7 +45,7 @@ const IndexPage = () => (
           <Text>Delhi, India</Text>
         </div>
         <div className="rightContent">
-          <img src={ProfileImageSrc} alt="Raghav Kanwal" style={{
+          <img src={ProfileImageSrc} alt="Raghav Kanwal" loading="lazy" style={{
             height: `85px`,
             width: `85px`,
             borderRadius: `50%`,
