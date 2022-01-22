@@ -21,7 +21,7 @@ const TopBarContainer = styled.div`
   max-width: 960px;
   margin: 0 auto;
   padding: 0.5rem 1rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 `;
 
 const NameBrand = styled.h1`
@@ -37,18 +37,18 @@ const NavLinks = styled.div`
   display: inline-block;
 `;
 
-const StyledLink = ({className, routePath, text}) => (
-  <Link className={className} to={routePath}>{text}</Link>
-);
+// const StyledLink = ({className, routePath, text}) => (
+//   <Link className={className} to={routePath}>{text}</Link>
+// );
 
-const NavLinkItem = styled(StyledLink)`
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.92);
-  font-family: inherit;
-  font-family: 'Roboto';
-  font-size: 1rem;
-  margin: 0 0 0 1rem;
-`;
+// const NavLinkItem = styled(StyledLink)`
+//   text-decoration: none;
+//   color: rgba(255, 255, 255, 0.92);
+//   font-family: inherit;
+//   font-family: 'Roboto';
+//   font-size: 1rem;
+//   margin: 0 0 0 1rem;
+// `;
 
 const Header = ({ siteTitle, menuLinks }) => (
   <AppHeader>
@@ -57,9 +57,9 @@ const Header = ({ siteTitle, menuLinks }) => (
         <NameBrand>Raghav Kanwal</NameBrand>
       </Link>
       <NavLinks>
-        <NavLinkItem className="NavLinkItem" routePath="/resume" text="Resume"></NavLinkItem>
+        {/* <NavLinkItem className="NavLinkItem" routePath="/resume" text="Resume"></NavLinkItem>
         <NavLinkItem className="NavLinkItem" routePath="/works" text="Works"></NavLinkItem>
-        <NavLinkItem className="NavLinkItem" routePath="/blog" text="Blog"></NavLinkItem>
+        <NavLinkItem className="NavLinkItem" routePath="/blog" text="Blog"></NavLinkItem> */}
       </NavLinks>
     </TopBarContainer>
   </AppHeader>

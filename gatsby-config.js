@@ -51,7 +51,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "raghavkanwal-s3-bucket",
+        bucketName: "raghavkanwal.dev",
+        acl: null
       },
     },
     `gatsby-transformer-json`,
@@ -60,6 +61,14 @@ module.exports = {
       options: {
         name: `src`,
         path: `${__dirname}/src/`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        google: {
+          families: ['Roboto:300,400,700', 'M PLUS Rounded 1c:700']
+        }
       }
     }
   ],

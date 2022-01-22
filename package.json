@@ -5,14 +5,17 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@loadable/component": "^5.15.2",
     "gatsby": "^4.5.3",
     "gatsby-plugin-gatsby-cloud": "^4.5.2",
     "gatsby-plugin-image": "^2.5.2",
+    "gatsby-plugin-loadable-components-ssr": "^4.1.2",
     "gatsby-plugin-manifest": "^4.5.2",
     "gatsby-plugin-offline": "^5.5.2",
     "gatsby-plugin-react-helmet": "^5.5.0",
     "gatsby-plugin-s3": "^0.3.8",
     "gatsby-plugin-sharp": "^4.5.2",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^4.5.2",
     "gatsby-transformer-json": "^4.5.0",
     "gatsby-transformer-sharp": "^4.5.0",
@@ -21,8 +24,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "styled-components": "^5.3.3",
-    "webfontloader": "^1.6.28"
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "prettier": "^2.5.1"

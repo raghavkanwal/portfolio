@@ -12,8 +12,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-import WebFont from 'webfontloader';
-
 import styled from "styled-components"
 
 const Footer = styled.footer`
@@ -23,12 +21,6 @@ const Footer = styled.footer`
   margin: 1rem;
   font-size:0.8rem;
 `;
-
-WebFont.load({
-  google: {
-    families: ['Roboto:300,400,700', 'M PLUS Rounded 1c:700']
-  }
-});
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -53,7 +45,6 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0.5rem 1rem`,
-          backgroundColor: `rgb(33,33,36)`,
           marginTop: `2.5rem`,
           borderRadius: `0.5rem`,
         }}
