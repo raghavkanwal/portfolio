@@ -6,7 +6,6 @@ import styled from "styled-components"
 import "normalize.css"
 import ProfileImageSrc from './../images/profile.jpeg';
 import About from "../components/about"
-import { DogModel } from "../components/dog"
 
 const Text = styled.p`
   font-family: 'Roboto';
@@ -23,7 +22,6 @@ const IndexPage = () => (
       margin: `0 auto`
     }}>
 
-      <DogModel/>
       <div className="businessCard" style={{
         marginTop: `2rem`,
         backgroundColor: `rgba(255, 255, 255, 0.08)`,

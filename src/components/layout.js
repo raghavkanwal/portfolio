@@ -15,7 +15,7 @@ import "./layout.css"
 import styled from "styled-components"
 
 const Footer = styled.footer`
-  color: rgb(100,100,100);
+  color: rgb(200,200,200);
   font-family: 'Roboto';
   text-align: center;
   margin: 1rem;

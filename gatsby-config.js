@@ -64,12 +64,47 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-web-font-loader`,
+      /* Include plugin */
+      resolve: "gatsby-omni-font-loader",
+    
+      /* Plugin options */
       options: {
-        google: {
-          families: ['Roboto:300,400,700', 'M PLUS Rounded 1c:700']
-        }
-      }
+    
+        /* Font loading mode */
+        mode: "async",
+    
+        /* Enable font loading listener to handle FOUT */
+        enableListener: true,
+    
+        /* Preconnect URL-s. This example is for Google Fonts */
+        preconnect: ["https://fonts.gstatic.com"],
+    
+        /* Self-hosted fonts config. Add font files and font CSS files to "static" folder */
+        // custom: [
+        //   {
+        //     /* Exact name of the font as defied in @font-face CSS rule */
+        //     name: ["Font Awesome 5 Brands", "Font Awesome 5 Free"],
+        //     /* Path to the font CSS file inside the "static" folder with @font-face definition */
+        //     file: "/fonts/fontAwesome/css/all.min.css",
+        //   },
+        // ],
+    
+        /* Web fonts. File link should point to font CSS file. */
+        web: [
+          {
+          /* Exact name of the font as defied in @font-face CSS rule */
+          name: "Roboto",
+          /* URL to the font CSS file with @font-face definition */
+          file: "https://fonts.googleapis.com/css2?family=Roboto:300,400,700&display=swap",
+          },
+          {
+            /* Exact name of the font as defied in @font-face CSS rule */
+            name: "M Plus Rounded 1c",
+            /* URL to the font CSS file with @font-face definition */
+            file: "https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap",
+          },
+        ],
+      },
     }
   ],
 }
