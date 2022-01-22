@@ -4,6 +4,9 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import styled from "styled-components"
 import "normalize.css"
+import ProfileImageSrc from './../images/profile.jpeg';
+
+import About from "../components/about"
 
 const Text = styled.p`
   font-family: 'Roboto';
@@ -16,26 +19,43 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <div class="container" style={{
-      textAlign: `center`,
       maxWidth: `60ch`,
       margin: `0 auto`
     }}>
 
       <div className="businessCard" style={{
+        marginTop: `2rem`,
         backgroundColor: `rgba(255, 255, 255, 0.08)`,
         padding: `1rem`,
-        borderRadius: `0.5rem`
+        borderRadius: `0.5rem`,
+        display: `flex`,
+        flexDirection: `row`,
+        marginBottom: `3rem`,
       }}>
-        <div className="leftContent">
+        <div className="leftContent" style={{
+          flexGrow: 1
+        }}>
           <h1 style={{
-            fontFamily: `M Plus Rounded 1c`,
             fontSize: `2.2rem`,
             color: `rgba(255,255,255,0.92)`,
+            fontFamily: `'M Plus Rounded 1c'`,
+            margin:0
           }}>Raghav Kanwal</h1>
-          <img src="./../images/profile.jpeg" alt="Raghav Kanwal"></img>
+          <Text>Frontend Engineer</Text>
+          <Text>Delhi, India</Text>
         </div>
-        <Text>Hello, I am a front-end engineer based in New Delhi, India!</Text>
+        <div className="rightContent">
+          <img src={ProfileImageSrc} alt="Raghav Kanwal" style={{
+            height: `85px`,
+            width: `85px`,
+            borderRadius: `50%`,
+            border: `2px solid rgba(255,255,255,0.8)`,
+            margin: 0
+          }}></img>
+        </div>
       </div>
+
+      <About />
     </div>
   </Layout>
 )
