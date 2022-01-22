@@ -5,36 +5,64 @@ const Resume = () => {
   const data = useStaticQuery(graphql`
     query {
         allDataJson {
-        edges {
+          edges {
             node {
-            basics {
+              basics {
                 name
+                email
+                summary
                 profiles {
                   network
                   url
+                  username
                 }
+                location {
+                  countryCode
+                }
+              }
+              education {
+                institution
+                area
+                studyType
+                startDate
+                endDate
+              }
+              languages {
+                language
+                fluency
+              }
+              skills {
+                name
+                level
+              }
+              work {
+                name
+                position
+                startDate
+                endDate
+                summary
+              }
             }
-            }
-        }
+          }
         }
     }
   `)
 
   const info = data.allDataJson.edges[0].node
-  const { basics } = info
+  console.log(info)
 
   return (
     <ul>
       {
-        basics.profiles.map(profile => {
-          return (
-            <li key={profile.network}>
-              <a href={profile.url} target="_blank">
-                {profile.network}
-              </a>
-            </li>
-          )
-        })
+        // basics.profiles.map(profile => {
+        //   return (
+        //     <li key={profile.network}>
+        //       <a href={profile.url} target="_blank" rel="noreferrer">
+        //         {profile.network}
+        //       </a>
+        //     </li>
+        //   )
+        // })
       }
     </ul>
   )
