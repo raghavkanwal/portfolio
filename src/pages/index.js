@@ -10,9 +10,35 @@ import About from "../components/about"
 const Text = styled.p`
   font-family: 'Roboto';
   font-size:0.9rem;
-  color: rgb(255,255,255,0.92);
+  color: ${props => props.theme.textColor};
   margin-bottom:0;
 `;
+
+const BusinessCard = styled.div`
+margin-top: 2rem;
+background-color: ${props => props.theme.businessCardBackground};
+padding: 1rem;
+border-radius: 0.5rem;
+display: flex;
+flex-direction: row;
+margin-bottom: 3rem;
+`
+
+const BusinessCardHeader = styled.h1`
+  font-size: 2.2rem;
+  color: ${props => props.theme.textColor};
+  font-family: 'M Plus Rounded 1c';
+  margin:0;
+  line-height:1.3;
+`
+
+const Image = styled.img`
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  border: 2px solid ${props => props.theme.textColor};
+  margin: 0;
+`
 
 const IndexPage = () => (
   <Layout>
@@ -23,40 +49,21 @@ const IndexPage = () => (
     }}>
       <br/>
       <br/>
-      <div className="businessCard" style={{
-        marginTop: `2rem`,
-        backgroundColor: `rgba(255, 255, 255, 0.08)`,
-        padding: `1rem`,
-        borderRadius: `0.5rem`,
-        display: `flex`,
-        flexDirection: `row`,
-        marginBottom: `3rem`,
-      }}>
+      <BusinessCard>
         <div className="leftContent" style={{
           flexGrow: 1
         }}>
-          <h1 style={{
-            fontSize: `2.2rem`,
-            color: `rgba(255,255,255,0.92)`,
-            fontFamily: `'M Plus Rounded 1c'`,
-            margin:0
-          }}>Raghav Kanwal</h1>
+          <BusinessCardHeader>Raghav Kanwal</BusinessCardHeader>
           <Text>Frontend Engineer</Text>
           <Text>Delhi, India</Text>
         </div>
         <div className="rightContent">
-          <img src={ProfileImageSrc} alt="Raghav Kanwal" loading="lazy" style={{
-            height: `85px`,
-            width: `85px`,
-            borderRadius: `50%`,
-            border: `2px solid rgba(255,255,255,0.8)`,
-            margin: 0
-          }}></img>
+          <Image src={ProfileImageSrc} alt="Raghav Kanwal" loading="lazy"/>
         </div>
-      </div>
+      </BusinessCard>
 
       <About />
-    </div>
+      </div>
   </Layout>
 )
 

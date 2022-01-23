@@ -13,7 +13,7 @@ import "./layout.css"
 
 import darkTheme  from "../themes/darkTheme"
 import lightTheme from "../themes/lightTheme" 
-import styled, { ThemeProvider } from "styled-components"
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components"
 
 const Footer = styled.footer`
   color: rgb(200,200,200);
@@ -24,10 +24,10 @@ const Footer = styled.footer`
 `;
 
 const Main = styled.main`
-  margin: '0 auto';
-  max-width: 960;
-  padding: '0.5rem 1rem';
-  border-radius: '0.5rem';
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 `;
 
 const Layout = ({ children }) => {
@@ -45,15 +45,23 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const [theme, changeTheme] = useState(lightTheme);
+  const [theme, changeTheme] = useState(darkTheme);
 
   const switchTheme = (isThemeLight) => {
     changeTheme(isThemeLight ? lightTheme : darkTheme);
   }
 
+  const MyGlobalStyle = createGlobalStyle`
+    body {
+      background-color: ${props => theme.bodyBackground};
+      transition: all 0.2s ease-in-out;
+    }
+  `;
+
   return (
     <ThemeProvider theme={theme}>
       <Header menuLinks={data.site.siteMetadata.menuLinks} switchTheme={switchTheme} />
+      <MyGlobalStyle />
         <Main>{children}</Main>
       <Footer>{`© ${new Date().getFullYear()}, Raghav Kanwal. All Rights Reserved.`}</Footer>
     </ThemeProvider>
