@@ -22,7 +22,7 @@ export const TopBarContainer = styled.div`
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   transition: background-color 0.2s ease-in-out;
 `;
 
@@ -38,6 +38,7 @@ export const NameBrand = styled.h1`
 export const NavLinks = styled.div`
   list-style:none;
   display: inline-block;
+  flex-grow: 1;
 `;
 
 export const Toggle = styled.button`
@@ -69,9 +70,14 @@ export const StyledLink = ({className, routePath, text}) => (
 
 export const NavLinkItem = styled(StyledLink)`
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.92);
+  color: ${props => props.theme.textColor};
   font-family: inherit;
   font-family: 'Roboto';
   font-size: 1rem;
   margin: 0 0 0 1rem;
+  padding-bottom: 0.2rem;
+ 
+  &:hover {
+    border-bottom: 1px solid ${props => props.theme.teaseThemeColor}
+  }
 `;

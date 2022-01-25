@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 import { AnimatePresence, motion } from "framer-motion" 
 import { RiMoonClearFill, RiSunFill } from 'react-icons/ri'; 
-import { AppHeader, TopBarContainer, NameBrand, NavLinks, Toggle } from "./styled-snippets/header";
+import { AppHeader, TopBarContainer, NameBrand, NavLinks, Toggle, NavLinkItem } from "./styled-snippets/header";
 
 import "normalize.css"
 
@@ -24,11 +24,11 @@ const Header = ({ switchTheme }) => {
           <NameBrand>Raghav Kanwal</NameBrand>
         </Link>
         <NavLinks>
-          { /* 
+          { 
               <NavLinkItem className=  "NavLinkItem" routePath="/resume" text="Resume"></NavLinkItem>
-              <NavLinkItem className="NavLinkItem" routePath="/works" text="Works"></NavLinkItem>
-              <NavLinkItem className="NavLinkItem" routePath="/blog" text="Blog"></NavLinkItem> 
-          */  }
+            //  <NavLinkItem className="NavLinkItem" routePath="/works" text="Works"></NavLinkItem>
+            //  <NavLinkItem className="NavLinkItem" routePath="/blog" text="Blog"></NavLinkItem> 
+          }
         </NavLinks>
         <AnimatePresence exitBeforeEnter initial={false}>
           <motion.div 
