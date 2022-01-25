@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
   const MyGlobalStyle = createGlobalStyle`
     body {
       background-color: ${props => theme.bodyBackground};
-      transition: all 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
     }
   `;
 

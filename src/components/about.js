@@ -48,7 +48,7 @@ const LinkText = styled.a`
 const About = () => (
     <>
         <Subtitle>About</Subtitle>
-        <Text>I'm a frontend engineer based in Delhi with a passion for building digital products and enabling organizations to deliver bespoke web experiences. I have a knack for web design and development, from planning and designing all the way to solving real-life problems with code. When not online, I love gaming and I find myself regularly on the weird side of YouTube. Currently, I'm helping <LinkText href="https://unicommerce.com" target="_blank" rel="noreferrer">Unicommerce</LinkText> realise their vision, while completing my Master's degree in Software Systems at BITS Pilani.</Text>
+        <Text>I'm a frontend engineer based in Delhi with a passion for building digital products and enabling organizations to deliver bespoke web experiences. I have a knack for web design and development, from planning and designing all the way to solving real-life problems with code. When not online, I love gaming and I find myself regularly on the weird side of YouTube. Currently, I'm building products at <LinkText href="https://unicommerce.com" target="_blank" rel="noreferrer">Unicommerce</LinkText>, while completing my Master's degree in Software Systems at BITS Pilani.</Text>
 
         <Subtitle>Bio</Subtitle>
         <div className="pair-item" style={{ paddingLeft: `3rem`, textIndent: `-3rem`,fontFamily: `'Roboto'`, fontSize: `0.9rem`, marginBottom: `0.3rem`, textAlign: `justify`, color: `${props => props.theme.textColor}`}}>

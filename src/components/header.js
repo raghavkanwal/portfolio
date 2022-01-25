@@ -16,7 +16,7 @@ const AppHeader = styled.header`
   left: 0;
   right: 0;
   z-index: 5;
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 `;
 
 const TopBarContainer = styled.div`
@@ -28,7 +28,7 @@ const TopBarContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 `;
 
 const NameBrand = styled.h1`
@@ -37,7 +37,7 @@ const NameBrand = styled.h1`
   margin: 0 1rem 0 0;
   display: inline-block;
   font-family: 'M Plus Rounded 1c';
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 `;
 
 const NavLinks = styled.div`
