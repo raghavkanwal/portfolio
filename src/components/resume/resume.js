@@ -1,72 +1,13 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
 
-const Resume = () => {
-  const data = useStaticQuery(graphql`
-    query {
-        allDataJson {
-          edges {
-            node {
-              basics {
-                name
-                email
-                summary
-                profiles {
-                  network
-                  url
-                  username
-                }
-                location {
-                  countryCode
-                }
-              }
-              education {
-                institution
-                area
-                studyType
-                startDate
-                endDate
-              }
-              languages {
-                language
-                fluency
-              }
-              skills {
-                name
-                level
-              }
-              work {
-                name
-                position
-                startDate
-                endDate
-                summary
-              }
-            }
-          }
-        }
-    }
-  `)
+import loadable from "@loadable/component";
 
-  const info = data.allDataJson.edges[0].node
-  console.log(info)
+const ResumeFrame = loadable(() => import('./ResumeFrame'))
 
+const Resume = ({ resume }) => {
   return (
-    <ul>
-      {
-        // basics.profiles.map(profile => {
-        //   return (
-        //     <li key={profile.network}>
-        //       <a href={profile.url} target="_blank" rel="noreferrer">
-        //         {profile.network}
-        //       </a>
-        //     </li>
-        //   )
-        // })
-      }
-    </ul>
+    <ResumeFrame fallback={<div>Loading...</div>}/>
   )
-
-}
+};
 
 export default Resume

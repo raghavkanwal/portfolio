@@ -16,6 +16,6 @@ export const Main = styled.main`
 `;
 
 export const Container = styled.div`
-    max-width: 60ch;
+    max-width: 100%;
     margin: 2rem auto 0;
 `;
