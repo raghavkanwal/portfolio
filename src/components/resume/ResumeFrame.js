@@ -20,7 +20,7 @@ const ResumeFrame = () => {
     return (
         <>
             {isLoading && <LoadingSpan>Please wait...</LoadingSpan>}
-            <iframe onLoad={handleLoading} title="Raghav Kanwal" src="https://registry.jsonresume.org/raghavkanwal?theme=pumpkin" style={{width: `100%`, border: 0, height: `100vh`}}></iframe>
+            <iframe onLoad={handleLoading} title="Raghav Kanwal" src="https://registry.jsonresume.org/raghavkanwal?theme=elegant" style={{width: `100%`, border: 0, height: `100vh`}}></iframe>
         </>
     )
 }
