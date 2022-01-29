@@ -86,7 +86,6 @@ export const StyledLink = ({className, routePath, text}) => (
 export const NavLinkItem = styled(StyledLink)`
   text-decoration: none;
   color: ${props => props.theme.textColor};
-  font-family: inherit;
   font-family: 'Roboto';
   font-size: 1rem;
   margin: 0 0 0 1rem;

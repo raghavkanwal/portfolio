@@ -13,9 +13,32 @@ import "./layout.css"
 
 import darkTheme from "../themes/darkTheme"
 import lightTheme from "../themes/lightTheme"
-import { ThemeProvider, createGlobalStyle } from "styled-components"
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components"
 
 import { Footer, Main, Container } from "./styled-snippets/layout"
+
+import { MobileNavItemList , MobileNavLinkItem } from "./styled-snippets/layout";
+
+const Menu = styled.aside`
+  position:fixed;
+  top:52px;
+  right:0;
+  transition: width 0.4s ease-in-out;
+  width: 0;
+  max-width: 40vw;
+  height:100vh;
+  z-index: 6;
+  background-color:${props => props.theme.bodyBackground};
+
+  &.open-menu {
+    width: 100%;
+  }
+
+  @media screen and (max-width:768px) {
+    max-width:100%;
+  }
+`;
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -58,9 +81,13 @@ const Layout = ({ children }) => {
       <Main>
       <Header menuLinks={data.site.siteMetadata.menuLinks} switchTheme={switchTheme} toggleSidebar={toggleSidebar}/>
         <Container>
-          <div className={`${showMenu ? 'open-menu' : 'close-menu'}`}>
-            
-          </div>
+          <Menu className={`${showMenu ? 'open' : 'close'}-menu`} style={{
+            position: `absolute`, top: 52, right: 0
+          }}>
+            <MobileNavItemList>
+              <MobileNavLinkItem className="NavLinkItem" routePath="/resume" text="Resume"></MobileNavLinkItem>
+            </MobileNavItemList>
+          </Menu>
           <br />
           <br />
           {children}
