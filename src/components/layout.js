@@ -23,7 +23,7 @@ const Menu = styled.aside`
   position:fixed;
   top:52px;
   right:0;
-  transition: width 0.4s ease-in-out;
+  transition: width 0.1s ease-in-out;
   width: 0;
   max-width: 40vw;
   height:100vh;
@@ -32,6 +32,11 @@ const Menu = styled.aside`
 
   &.open-menu {
     width: 100%;
+  }
+
+  &.close-menu {
+    width: 0;
+    overflow:hidden;
   }
 
   @media screen and (max-width:768px) {
