@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { HiOutlineMenu } from "react-icons/hi"
 
 export const AppHeader = styled.header`
   width: 100%;
@@ -79,5 +80,16 @@ export const NavLinkItem = styled(StyledLink)`
  
   &:hover {
     border-bottom: 1px solid ${props => props.theme.teaseThemeColor}
+  }
+`;
+
+
+export const MenuButton = styled(HiOutlineMenu)`
+  font-size:1.8rem;
+  color: ${props => props.theme.textColor};
+  margin: 0 1rem;
+
+  &:hover {
+    cursor:pointer;
   }
 `;
