@@ -19,8 +19,8 @@ const Header = ({ switchTheme }) => {
             <NavLinkItem className=  "NavLinkItem" routePath="/resume" text="Resume"></NavLinkItem>
           }
         </NavLinks>
-        <MenuButton />
         <ThemeToggler switchTheme={switchTheme} />
+        <MenuButton />
       </TopBarContainer>
     </AppHeader>
   )

@@ -87,7 +87,7 @@ export const NavLinkItem = styled(StyledLink)`
 export const MenuButton = styled(HiOutlineMenu)`
   font-size:1.8rem;
   color: ${props => props.theme.textColor};
-  margin: 0 1rem;
+  margin: 0 0 0 1.5rem;
 
   &:hover {
     cursor:pointer;
