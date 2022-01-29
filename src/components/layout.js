@@ -38,6 +38,8 @@ const Layout = ({ children }) => {
     changeTheme(isThemeLight ? lightTheme : darkTheme);
   }
 
+  const [showMenu, toggleMenu] = useState(false);
+
   const MyGlobalStyle = createGlobalStyle`
     body {
       background-color: ${props => theme.bodyBackground};
@@ -45,12 +47,20 @@ const Layout = ({ children }) => {
     }
   `;
 
+  const toggleSidebar = (showMenu) => {
+    toggleMenu(showMenu);
+    console.log("> Show menu ", showMenu);
+  }
+
   return (
     <ThemeProvider theme={theme}>
-      <Header menuLinks={data.site.siteMetadata.menuLinks} switchTheme={switchTheme} />
       <MyGlobalStyle />
       <Main>
+      <Header menuLinks={data.site.siteMetadata.menuLinks} switchTheme={switchTheme} toggleSidebar={toggleSidebar}/>
         <Container>
+          <div className={`${showMenu ? 'open-menu' : 'close-menu'}`}>
+            
+          </div>
           <br />
           <br />
           {children}

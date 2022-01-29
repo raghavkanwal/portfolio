@@ -23,23 +23,37 @@ export const TopBarContainer = styled.div`
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   transition: background-color 0.2s ease-in-out;
 `;
 
 export const NameBrand = styled.h1`
-  color: ${props => props.theme.textColor};
-  font-size: 1.4rem;
   margin: 0 1rem 0 0;
-  display: inline-block;
-  font-family: 'M Plus Rounded 1c';
-  transition: background-color 0.2s ease-in-out;
+  display:inherit;
+  
+  a {
+    color: ${props => props.theme.textColor};
+    font-size: 1.4rem;
+    font-family: 'M Plus Rounded 1c';
+    transition: background-color 0.2s ease-in-out;
+    line-height:1;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width:768px) {
+    flex-grow: 1;
+    display:inherit;
+  }
 `;
 
 export const NavLinks = styled.div`
   list-style:none;
   display: inline-block;
   flex-grow: 1;
+
+  @media screen and (max-width:768px) {
+    display:none;
+  }
 `;
 
 export const Toggle = styled.button`
@@ -91,5 +105,9 @@ export const MenuButton = styled(HiOutlineMenu)`
 
   &:hover {
     cursor:pointer;
+  }
+
+  @media screen and (min-width:769px) {
+    display:none;
   }
 `;
