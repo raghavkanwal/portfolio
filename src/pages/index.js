@@ -16,7 +16,7 @@ const IndexPage = () => (
         }}>
           <BusinessCardHeader>Raghav Kanwal</BusinessCardHeader>
           <Text>Frontend Engineer</Text>
-          <Text>Delhi, India</Text>
+          <Text>Vancouver, Canada</Text>
         </div>
         <div className="rightContent">
           <Image src={ProfileImageSrc} alt="Raghav Kanwal" loading="lazy"/>
